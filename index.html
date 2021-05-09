@@ -20,16 +20,28 @@
     <title>Dynamic CSS Variables</title>
   </head>
   <body>
+    <h1 class="main-title">Dynamic CSS Variables</h1>
+    <p>Username: shpend</p>
+    <p>Password: test123</p>
     <div class="app">
       <div class="login">
         <form>
           <i class="fas fa-user login__icon"></i>
           <h4 class="login__title">Member Login</h4>
-          <input type="text" class="login__input" placeholder="Username" />
-          <input type="text" class="login__input" placeholder="Password" />
+          <p class="login__alert">Invalid input</p>
+          <input
+            type="text"
+            class="login__input username"
+            placeholder="Username"
+          />
+          <input
+            type="password"
+            class="login__input password"
+            placeholder="Password"
+          />
           <div class="button-wrapper">
-            <button class="button button--primary">LogIn</button>
-            <button class="button button--secondary">Cancel</button>
+            <button class="loginBtn button button--primary">LogIn</button>
+            <button class="cancelBtn button button--secondary">Cancel</button>
           </div>
         </form>
       </div>
